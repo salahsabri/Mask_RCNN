@@ -29,11 +29,8 @@ Usage: import the module (see Jupyter notebooks for examples), or run from
 # This has to be done before other importa that might
 # set it, but only if we're running in script mode
 # rather than being imported.
-if __name__ == '__main__':
-    import matplotlib
-    # Agg backend runs without a display
-    matplotlib.use('Agg')
-    import matplotlib.pyplot as plt
+
+import matplotlib.pyplot as plt
 
 import os
 import sys
